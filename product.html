@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-comerce</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!---bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- google icon-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- google font-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cookie&family=Ibarra+Real+Nova&family=Roboto:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cookie&family=Ibarra+Real+Nova&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Cookie&family=Ibarra+Real+Nova&family=Roboto:ital,wght@0,300;0,400;0,900;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+  .hero{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.row{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 45%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 150px;
+
+}
+.slider{
+    height: 80vh;
+    display: flex;
+}
+.product img{
+    height: 19vh;
+    margin-bottom: 9px;
+    cursor: pointer;
+    opacity: 0.6;
+    display: block;
+}
+
+.product img:hover{
+    opacity: 1;
+}
+
+
+.preview img{
+    height: 540px;
+    margin-left: 15px;
+}
+@media only screen and (max-width: 600px){
+   
+    .preview img{
+        height:100%;
+        width:100%;
+    }
+    .an{
+        display:none;
+    }
+}
+p{
+    margin-bottom: 20px;
+}
+.brand{
+    background: #008000;
+    width: fit-content;
+    color: #fff;
+    font-size: 20px;
+    padding: 2px 5px;
+}
+h2{
+    font-size: 45px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.rating{
+    display: flex;
+    height: 15px;
+}
+.rating .fa{
+    color: #008000;
+}
+.price{
+    color: #fe980f;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+input{
+    width: 30px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background: #fe980f;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+button .fa{
+    margin-right: 10px;
+}
+.related{
+    width: 90%;
+    margin: 0 auto 40px;
+    margin-top:140px;
+}
+.related .row{
+    width: 100%;
+    height: auto;
+}
+.columns{
+    flex-basis: 22%;
+    height: 100%;
+}
+.items img{
+    width: 100%;
+}
+.details{
+    margin-top: 20px;
+}
+.details p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.details .rating{
+    margin: 10px 0;
+}
+
+.table, .th, .td {
+    width:100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-color:#7c7c80 ;
+
+}
+.th {
+  text-align: left;
+  font-size: px;
+  color: #7c7c80;
+
+}
+.td{
+    font-size-adjust:;
+    color: #7c7c80;
+    font-family:'Assistant', sans-serif;
+    font-size: 17px;
+}
+.h{
+        background: transparent;
+        
+      }
+}
+.nav-link{
+  font-size:17px;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+  padding: 24px 26px;
+}
+.hover-underline-animations {
+  display: inline-block;
+  position: relative;
+  color: 
+#0087ca;
+}
+.hover-underline-animations{
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.hover-underline-animations:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+#0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  bottom: px;
+  box-sizing: border-box;
+}
+
+.hover-underline-animations:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+    </style>
+<body>
+
+<!----navbar-->
+      <div class="bg-img" onclick="window.location.href = 'index1.html'">
+    <nav class="navbar navbar-expand-lg h">
+
+<!--  Show this only on mobile to medium screens  -->
+  <a class="navbar-brand d-lg-none" href="index1.html"><img width="40px" height="40px" src="img/br1.png"></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--  Use flexbox utility classes to change how the child elements are justified  -->
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link hover-underline-animations" href="index1.html" class="active" style="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hover-underline-animations"href="index1.html" class="active" style="">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link hover-underline-animations" href="index3.html">Contact</a>
+      </li>
+    </ul>
+    
+    
+<!--   Show this only lg screens and up   -->
+    <a class="navbar-brand d-none d-lg-block" href="index1.html"><img width="40px" height="40px" src="img/br1.png"></a>
+    
+    
+    
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fa fa-shopping-cart" style="font-size:22px;"></i></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div>
+<div class="col-md-12- col-sm-12 col-lg-12">
+   <hr> 
+</div>
+<!----slider-->
+
+<!-- hero section start-->
+<div class="hero" >
+        <div class="row">
+            <div class="col-md-12 col-lg-6 col-sm-6 ">
+                <div class="heading" style="display:inline-flex; list-style:none; margin-bottom: 20px;">
+                    <li><a href="index1.html"> HOME</a></li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>ankitsaini@54625gmail.com</li>
+
+                </div>
+
+                <div class="slider">
+                    <div class="product">
+                        <img class="dr" src="img/product1.png" alt="" onclick="clickme(this)">
+                        <img class="dr" src="img/product2.png" alt="" onclick="clickme(this)">
+                        <img class="dr" src="img/product3.png" alt="" onclick="clickme(this)">
+                        <img class="dr an" src="img/product4.png" alt="" onclick="clickme(this)"> 
+
+                    </div>
+                    <div class="preview">
+                        <img class=""src="img/product4.png" id="imagebox" alt=" ">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12">
+
+                <div class="content"style="margin-top:80px;">
+                    <h3>Woman Black Quirky Print Empire Dress</h3>
+                    <p class="brand" style="">Brand: Varanga</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <p class="price">Brand: Varanga</p>
+                    <p style="margin-top: 18px; margin-bottom: 18px;">Note: Please allow 2 weeks for delivery.</p>
+                    <h6 style="margin-top:18px; margin-bottom: 18px;">Size Chart</h6>
+                    <h6 style="margin-top:18px; margin-bottom:10px;">THAT THERE IS OVERSIZED T-SHIRT</h6>
+                    <table class="table">
+  <tr>
+    <th class="th"></th>
+    <th class="th">CHEST</th>
+    <th class="th">SHOULDER</th>
+    <th class="th">FRONT LENGHT</th>
+    <th class="th">SLEEVE</th>
+  </tr>
+  <tr>
+    <td class="td">S (in)</td>
+    <td class="td">46</td>
+    <td class="td">21</td>
+    <td class="td">27</td>
+    <td class="td">7</td>
+  </tr>
+  <tr>
+    <td class="td">M (in)</td>
+    <td class="td">52</td>
+    <td class="td">24</td>
+    <td class="td"> 30</td>
+    <td class="td">8</td>
+  </tr>
+</table>
+<h3 style="20px;margin-top:20px;"><span style="color: red; font-size:20;">PRICE.</span>&nbsp;&nbsp;4000</h3>
+                    <p style="margin-top: 18px; margin-bottom: 18px;">Size: <select name="size">
+
+                            <option value="select size">Select size</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+
+                        </select></p>
+                    <p>Quantity: <input type="text" value="1"></p>
+                    <button type="button">
+                        <i class="fa fa-shopping-cart">
+                        </i>
+                        Add to cart</button>
+                </div>
+
+            </div>
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+    </script>
+
+<!--footer-->
+ 
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Company Name © 2018</p>
+        </footer>
+    </div>
+<!----bootstap--->
+<!-- my first togglebar -->
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
